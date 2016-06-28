@@ -10,10 +10,10 @@ $this->title = Yii::t('app', 'DataVenia');
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+            <h1><?= Yii::t('app', 'A decade of IT experience') ?></h1>
             <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <p><?= Yii::t('app', 'From webdesign and payment systems to back-end development and team management.') ?></p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll"><?= Yii::t('app', 'Find Out More') ?></a>
         </div>
     </div>
 </header>
