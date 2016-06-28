@@ -2,11 +2,14 @@
 
 /* @var $this yii\web\View */
 
+use yii\helpers\Html;
+
 $this->title = 'My Yii Application';
 
 ?>
 <header>
     <div class="header-content">
+        <?= Html::img('/img/datavenia-logo-full.png') ?>
         <div class="header-content-inner">
             <h1>Your Favorite Source of Free Bootstrap Themes</h1>
             <hr>
