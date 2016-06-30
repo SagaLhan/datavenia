@@ -22,10 +22,12 @@ $this->title = Yii::t('app', 'DataVenia');
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">We've got what you need!</h2>
+                <h2 class="section-heading"><?= Yii::t('app', 'About DataVenia') ?></h2>
                 <hr class="light">
-                <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                <p class="text-faded">
+                    <?= Yii::t('app', 'DataVenia is a small, one-man company that I utilize for personal commercial projects and freelance jobs.') ?>
+                </p>
+                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button"><?= Yii::t('app', 'Look At Services') ?></a>
             </div>
         </div>
     </div>
@@ -35,7 +37,7 @@ $this->title = Yii::t('app', 'DataVenia');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
+                <h2 class="section-heading"><?= Yii::t('app', 'Services and Experience') ?></h2>
                 <hr class="primary">
             </div>
         </div>
@@ -44,30 +46,37 @@ $this->title = Yii::t('app', 'DataVenia');
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                    <h3>Sturdy Templates</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    <i class="fa fa-4x fa-eur text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Payment Services') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Vast experience with a wide array of systems, services and parties in the realm of online banking and mobile payments.') ?></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                    <h3>Ready to Ship</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Android App Development') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Native Android apps for the operating system with the largest market share on smartphones and tablets.') ?></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                    <h3>Up to Date</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    <i class="fa fa-4x fa-sitemap text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Specification') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Great at writing up system specifications, both functional and technical. Talented at understanding complex system interactions.') ?></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                    <h3>Made with Love</h3>
-                    <p class="text-muted">You have to make your websites with love these days!</p>
+                    <i class="fa fa-4x fa-users text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Project Management') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Years of experience as a project manager of junior, medior and senior developers with regards to spreading workload, specifications and working in team settings to reach deadlines.') ?></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-black-tie text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Company Management') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Holding a Chief Technology Officer position - deciding company strategy from multiple viewpoints in addition to technology.') ?></p>
                 </div>
             </div>
         </div>
