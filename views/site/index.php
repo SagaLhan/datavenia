@@ -44,35 +44,44 @@ $this->title = Yii::t('app', 'DataVenia');
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-eur text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Payment Services') ?></h3>
                     <p class="text-muted"><?= Yii::t('app', 'Vast experience with a wide array of systems, services and parties in the realm of online banking and mobile payments.') ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-paint-brush text-primary sr-icons"></i>
+                    <h3><?= Yii::t('app', 'Front-End Development') ?></h3>
+                    <p class="text-muted"><?= Yii::t('app', 'Working with Bootstrap and JQuery for modern, professional websites and user interfaces.') ?></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Android App Development') ?></h3>
                     <p class="text-muted"><?= Yii::t('app', 'Native Android apps for the operating system with the largest market share on smartphones and tablets.') ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-sitemap text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Specification') ?></h3>
                     <p class="text-muted"><?= Yii::t('app', 'Great at writing up system specifications, both functional and technical. Talented at understanding complex system interactions.') ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-users text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Project Management') ?></h3>
                     <p class="text-muted"><?= Yii::t('app', 'Years of experience as a project manager of junior, medior and senior developers with regards to spreading workload, specifications and working in team settings to reach deadlines.') ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-black-tie text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Company Management') ?></h3>
