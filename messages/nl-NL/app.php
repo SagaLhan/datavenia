@@ -23,5 +23,7 @@
   'Great at writing up system specifications, both functional and technical. Talented at understanding complex system interactions.' => 'Geweldig in het schrijven van systeem specificaties, beiden functioneel en technisch. Talent voor het begrijpen van complexe systeeminteracties.',
   'Holding a Chief Technology Officer position - deciding company strategy from multiple viewpoints in addition to technology.' => 'In de positie van Chief Technology Officer - het besluiten van bedrijfsstrategie vanuit meerdere invalshoeken, naast technologie.',
   'Front-End Development' => 'Front-End Development',
-  'Working with Bootstrap and JQuery for modern, professional websites and user interfaces.' => 'Werken met Bootstrap en JQuery voor moderne, professionele websites en gebruikersinterfaces.',
+  'Working mainly with Bootstrap and JQuery for modern, professional websites and user interfaces - but also experienced in Meteor and ReactJS.' => 'Voornamelijk werk met Bootstrap en JQuery voor moderne, professionele websites en gebruikersinterfaces - maar ook ervaren met Meteor en ReactJS.',
+  'Want to get in touch?' => 'Contact opnemen?',
+  'Don\'t hesitate to send me an email or contact me on LinkedIn!' => 'Schroom niet om een mailtje te sturen of me te contacteren op LinkedIn!',
 );

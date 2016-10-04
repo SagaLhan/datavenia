@@ -55,7 +55,7 @@ $this->title = Yii::t('app', 'DataVenia');
                 <div class="service-box">
                     <i class="fa fa-4x fa-paint-brush text-primary sr-icons"></i>
                     <h3><?= Yii::t('app', 'Front-End Development') ?></h3>
-                    <p class="text-muted"><?= Yii::t('app', 'Working with Bootstrap and JQuery for modern, professional websites and user interfaces.') ?></p>
+                    <p class="text-muted"><?= Yii::t('app', 'Working mainly with Bootstrap and JQuery for modern, professional websites and user interfaces - but also experienced in Meteor and ReactJS.') ?></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
@@ -96,90 +96,30 @@ $this->title = Yii::t('app', 'DataVenia');
     <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                <a href="http://bitcat.datavenia.nl" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/bitcat.png" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+                                Meteor & ReactJS App
                             </div>
                             <div class="project-name">
-                                Project Name
+                                BitCat
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                <a href="https://play.google.com/store/apps/details?id=com.datavenia.pathfinderpanacea" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/android.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+                                Android App
                             </div>
                             <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
+                                Pathfinder Panacea
                             </div>
                         </div>
                     </div>
@@ -189,30 +129,21 @@ $this->title = Yii::t('app', 'DataVenia');
     </div>
 </section>
 
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2>Free Download at Start Bootstrap!</h2>
-            <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-        </div>
-    </div>
-</aside>
-
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <h2 class="section-heading"><?= Yii::t('app', 'Want to get in touch?') ?></h2>
                 <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p><?= Yii::t('app', 'Don\'t hesitate to send me an email or contact me on LinkedIn!') ?></p>
             </div>
             <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>123-456-6789</p>
+                <i class="fa fa-linkedin fa-3x sr-contact"></i>
+                <p><a href="https://www.linkedin.com/in/silvanv" target="_blank">https://www.linkedin.com/in/silvanv</a></p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <p><a href="mailto:silvan@datavenia.nl">silvan@datavenia.nl</a></p>
             </div>
         </div>
     </div>
