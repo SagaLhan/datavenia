@@ -94,6 +94,8 @@ $this->title = Yii::t('app', 'DataVenia');
 
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
+        <div class="alert alert-info text-center">Portfolio coming soon!</div>
+        <!--
         <div class="row no-gutter popup-gallery">
             <div class="col-lg-4 col-sm-6">
                 <a href="http://bitcat.datavenia.nl" target="_blank" class="portfolio-box">
@@ -126,22 +128,23 @@ $this->title = Yii::t('app', 'DataVenia');
                 </a>
             </div>
         </div>
+        -->
     </div>
 </section>
 
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><?= Yii::t('app', 'Want to get in touch?') ?></h2>
                 <hr class="primary">
                 <p><?= Yii::t('app', 'Don\'t hesitate to send me an email or contact me on LinkedIn!') ?></p>
             </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
+            <div class="col-lg-6 text-center">
                 <i class="fa fa-linkedin fa-3x sr-contact"></i>
                 <p><a href="https://www.linkedin.com/in/silvanv" target="_blank">https://www.linkedin.com/in/silvanv</a></p>
             </div>
-            <div class="col-lg-4 text-center">
+            <div class="col-lg-6 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                 <p><a href="mailto:silvan@datavenia.nl">silvan@datavenia.nl</a></p>
             </div>
