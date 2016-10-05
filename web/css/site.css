@@ -89,3 +89,27 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
+
+header.error-page {
+    background-image: url('../img/header-error.jpg');
+}
+
+.bg-primary {
+    background-color: #337ab7;
+}
+.btn-primary {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.text-primary {
+    color: #337ab7;
+}
+hr {
+    border-color: #337ab7;
+}
+a {
+    color: #337ab7;
+}
+.portfolio-box .portfolio-box-caption {
+    background: rgba(46, 109, 164, 0.9);
+}

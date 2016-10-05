@@ -8,29 +8,17 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\web\Cookie;
+use yii\web\ErrorAction;
+use yii\web\Response;
 
 class SiteController extends Controller
 {
+    static $languages = ['nl-NL', 'en-US'];
+
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout'],
-                'rules' => [
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
         ];
     }
 
@@ -38,57 +26,50 @@ class SiteController extends Controller
     {
         return [
             'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                'class' => ErrorAction::class,
             ],
         ];
     }
+
+    public function init()
+    {
+        parent::init();
+
+        $cookies = Yii::$app->request->cookies;
+        $language = $cookies->getValue('language', 'nl-NL');
+        if (!in_array($language, static::$languages)) {
+            $language = 'nl-NL';
+        }
+        Yii::$app->language = $language;
+    }
+
 
     public function actionIndex()
     {
         return $this->render('index');
     }
 
-    public function actionLogin()
+    /**
+     * Change the application language and store it in the session
+     *
+     * @param string $lang
+     * @return Response
+     */
+    public function actionSetLanguage($lang = '')
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+        if (in_array($lang, static::$languages)) {
+            $cookies = Yii::$app->response->cookies;
+            $cookies->add(new Cookie([
+                'name' => 'language',
+                'value' => $lang,
+                'expire' => strtotime('+1 year')
+            ]));
         }
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+        if (Yii::$app->request->referrer) {
+            return $this->redirect(Yii::$app->request->referrer);
         }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
 
         return $this->goHome();
-    }
-
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 }

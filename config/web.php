@@ -1,5 +1,8 @@
 <?php
 
+use app\components\TranslationEventHandler;
+use yii\i18n\PhpMessageSource;
+
 $params = require(__DIR__ . '/params.php');
 
 $config = [
@@ -38,14 +41,25 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => PhpMessageSource::class,
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
+                    'on missingTranslation' => [TranslationEventHandler::class, 'handleMissingTranslation'],
+                    'sourceLanguage' => 'en-US',
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
