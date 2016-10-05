@@ -12,8 +12,8 @@ $this->title = Yii::t('app', 'DataVenia');
         <div class="header-content-inner">
             <h1><?= Yii::t('app', 'A decade of IT experience') ?></h1>
             <hr>
-            <p><?= Yii::t('app', 'From webdesign and payment systems to back-end development and team management.') ?></p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll"><?= Yii::t('app', 'Find Out More') ?></a>
+            <p><h3><?= Yii::t('app', 'From webdesign and payment systems to back-end development and team management.') ?></h3></p>
+            <p>><a href="#about" class="btn btn-primary btn-xl page-scroll"><?= Yii::t('app', 'Find Out More') ?></a></p
         </div>
     </div>
 </header>

@@ -50,12 +50,18 @@ FrontPageTemplateAsset::register($this);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><?= Yii::t('app', 'DataVenia') ?></a>
+                <a class="navbar-brand page-scroll" href="/"><?= Yii::t('app', 'DataVenia') ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/site/set-language?lang=en-US"><?= Html::img('/img/flag_en-US.gif') ?></a>
+                    </li>
+                    <li>
+                        <a href="/site/set-language?lang=nl-NL"><?= Html::img('/img/flag_nl-NL.gif') ?></a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#about"><?= Yii::t('app', 'Information') ?></a>
                     </li>
