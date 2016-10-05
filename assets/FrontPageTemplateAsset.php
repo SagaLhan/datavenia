@@ -19,6 +19,7 @@ class FrontPageTemplateAsset extends AssetBundle
         'css/creative.min.css',
         'css/magnific-popup.css',
         'css/font-awesome.min.css',
+        'css/site.css',
         'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
         'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic',
     ];
