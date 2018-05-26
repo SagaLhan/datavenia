@@ -26,4 +26,11 @@
   'Working mainly with Bootstrap and JQuery for modern, professional websites and user interfaces - but also experienced in Meteor and ReactJS.' => 'Voornamelijk werk met Bootstrap en JQuery voor moderne, professionele websites en gebruikersinterfaces - maar ook ervaren met Meteor en ReactJS.',
   'Want to get in touch?' => 'Contact opnemen?',
   'Don\'t hesitate to send me an email or contact me on LinkedIn!' => 'Schroom niet om een mailtje te sturen of me te contacteren op LinkedIn!',
+  'Personal Portfolio' => 'Persoonlijke Portfolio',
+  'Corporate Portfolio' => 'Zakelijke Portfolio',
+  'Dungeons & Dragons Campaign Management Portal' => 'Dungeons & Dragons Campaign Management Portal',
+  'Pathfinder Character Sheet Management Android App' => 'Pathfinder Character Sheet Management Android App',
+  'Send Payment Requests' => 'Stuur Betaalverzoeken',
+  'Online Invoicing' => 'Online Factureren',
+  'Webshop Payment Plugins' => 'Webshop Betaal Plugins',
 );
