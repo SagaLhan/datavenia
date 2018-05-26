@@ -92,33 +92,39 @@ $this->title = Yii::t('app', 'DataVenia');
     </div>
 </section>
 
-<section class="no-padding" id="portfolio">
+<section id="personal-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading"><?= Yii::t('app', 'Personal Portfolio') ?></h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
-        <div class="alert alert-info text-center">Portfolio coming soon!</div>
-        <!--
         <div class="row no-gutter popup-gallery">
             <div class="col-lg-4 col-sm-6">
-                <a href="http://bitcat.datavenia.nl" target="_blank" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/bitcat.png" class="img-responsive" alt="">
+                <a href="https://www.hashtagdragons.com" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/hashtagdragons.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Meteor & ReactJS App
+                                <?= Yii::t('app', 'Dungeons & Dragons Campaign Management Portal') ?>
                             </div>
                             <div class="project-name">
-                                BitCat
+                                #Dragons
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="https://play.google.com/store/apps/details?id=com.datavenia.pathfinderpanacea" target="_blank" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/android.jpg" class="img-responsive" alt="">
+                <a href="https://play.google.com/store/apps/details?id=com.datavenia.panacea" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/pathfinderpanacea.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Android App
+                                <?= Yii::t('app', 'Pathfinder Character Sheet Management Android App') ?>
                             </div>
                             <div class="project-name">
                                 Pathfinder Panacea
@@ -128,7 +134,83 @@ $this->title = Yii::t('app', 'DataVenia');
                 </a>
             </div>
         </div>
-        -->
+    </div>
+</section>
+
+<section class="no-padding" id="corporate-portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading"><?= Yii::t('app', 'Corporate Portfolio') ?></h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a href="https://www.digiwallet.nl?ref=144885" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/digiwallet.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <?= Yii::t('app', 'Payment Services') ?>
+                            </div>
+                            <div class="project-name">
+                                DigiWallet
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="https://www.e-acceptgiro.nl" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/eacceptgiro.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <?= Yii::t('app', 'Send Payment Requests') ?>
+                            </div>
+                            <div class="project-name">
+                                E-Acceptgiro
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="https://www.e-facturen.nl" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/efacturen.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <?= Yii::t('app', 'Online Invoicing') ?>
+                            </div>
+                            <div class="project-name">
+                                E-Facturen
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a href="https://www.e-facturen.nl" target="_blank" class="portfolio-box">
+                    <img src="img/portfolio/thumbnails/eplugins.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                <?= Yii::t('app', 'Webshop Payment Plugins') ?>
+                            </div>
+                            <div class="project-name">
+                                E-Plugins
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 

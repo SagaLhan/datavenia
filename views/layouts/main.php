@@ -69,7 +69,7 @@ FrontPageTemplateAsset::register($this);
                         <a class="page-scroll" href="#services"><?= Yii::t('app', 'Services') ?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio"><?= Yii::t('app', 'Portfolio') ?></a>
+                        <a class="page-scroll" href="#personal-portfolio"><?= Yii::t('app', 'Portfolio') ?></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact"><?= Yii::t('app', 'Contact') ?></a>
